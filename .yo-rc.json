@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "delphi-birthdays",
+    "libraryId": "f2f53459-ee7b-4054-944e-ff267c54b8a2",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "delphi-birthdays",
+    "solutionShortDescription": "delphi-birthdays description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
