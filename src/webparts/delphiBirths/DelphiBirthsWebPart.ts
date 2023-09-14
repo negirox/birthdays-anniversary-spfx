@@ -18,6 +18,7 @@ export interface IDelphiBirthsWebPartProps {
   template: any;
   height:string;
   width:string;
+  MessageNoBirthdays:string;
 }
 
 const imageTemplate: { imageUrl: string }[] = [{
@@ -98,7 +99,8 @@ export default class DelphiBirthsWebPart extends BaseClientSideWebPart<IDelphiBi
           this.properties.title = value;
         },
         height:this.properties.height,
-        width:this.properties.width
+        width:this.properties.width,
+        MessageNoBirthdays:this.properties.MessageNoBirthdays
       }
     );
 
@@ -155,10 +157,10 @@ export default class DelphiBirthsWebPart extends BaseClientSideWebPart<IDelphiBi
                   })
                 }
                 ),
-               /*  PropertyPaneTextField('height', {
-                  label: 'Enter tiles height'
+                 PropertyPaneTextField('MessageNoBirthdays', {
+                  label: 'Enter Message for No Birthdays'
                 }),
-                PropertyPaneTextField('width', {
+                /*PropertyPaneTextField('width', {
                   label: 'Enter tiles width'
                 }), */
               ]

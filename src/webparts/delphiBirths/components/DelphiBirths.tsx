@@ -12,6 +12,7 @@ export default class DelphiBirths extends React.Component<IDelphiBirthsProps, {}
           imageTemplate={this.props.imageTemplate} numberUpcomingDays={this.props.numberUpcomingDays}
           title={this.props.title} updateProperty={this.props.updateProperty} children={this.props.children}
           height={this.props.height} width={this.props.width}
+          MessageNoBirthdays={this.props.MessageNoBirthdays}
         />
       </section>
     );

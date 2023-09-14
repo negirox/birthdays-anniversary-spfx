@@ -9,7 +9,7 @@ import { WebPartTitle } from "@pnp/spfx-controls-react/lib/WebPartTitle";
 const imgBackgroundBallons: string = require('../../../../assets/ballonsBackgroud.png');
 import { Image, ImageFit } from 'office-ui-fabric-react/lib/Image';
 import { Label } from 'office-ui-fabric-react/lib/Label';
-import * as strings from 'ControlStrings';
+import * as strings from 'DelphiBirthsWebPartStrings';
 
 export default class Birthdays extends React.Component<IBirthdaysProps, IBirthdayState> {
   private _users: IUser[] = [];
@@ -50,7 +50,7 @@ export default class Birthdays extends React.Component<IBirthdaysProps, IBirthda
                   width={150}
                   height={150}
                 />
-                <Label className={styles.subTitle}>{strings.MessageNoBirthdays}</Label>
+                <Label className={styles.subTitle}>{this.props.MessageNoBirthdays ?? strings.MessageNoBirthdays}</Label>
               </div>
               :
               <HappyBirthday users={this.state.Users} imageTemplate={this.props.imageTemplate}

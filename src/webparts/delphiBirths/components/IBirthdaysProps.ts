@@ -9,4 +9,5 @@ export interface IBirthdaysProps {
   imageTemplate:string;
   height?:string;
   width?:string;
+  MessageNoBirthdays?:string;
 }

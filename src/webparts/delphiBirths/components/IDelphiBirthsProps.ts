@@ -9,4 +9,5 @@ export interface IDelphiBirthsProps {
   imageTemplate:string;
   height?:string;
   width?:string;
+  MessageNoBirthdays?:string;
 }
